@@ -43,16 +43,15 @@ class QuizzesController < ApplicationController
   end
 
   def reload
-    if params[:restart] == 1
+    session[:question_index] = 0;
+    session.delete(:answers);
+    redirect_to :action => "index"
+  end
 
-    else
-    # redo
+  def redo
     session[:question_index] = 0;
     session.delete(:answers);
     redirect_to :action => "show_question"
-
-    end
-    
   end
 
   def show_result
@@ -81,7 +80,9 @@ class QuizzesController < ApplicationController
     total_question_number = session[:questions].count
     correct_number = 0
     session[:answers].each do |key, value|
-      Question.find(key).check_answers(value) && correct_number += 1
+      if Question.find(key).check_answers(value) 
+         correct_number += 1
+      end
     end
     session[:results] ||= []
     session[:results].count == 5 && session[:results].shift

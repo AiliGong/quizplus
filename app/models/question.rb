@@ -1,12 +1,15 @@
 class Question < ApplicationRecord
+
     def check_answers(values)
       return_value = true;
       values && values.each do |a|
-        unless correct_answers[a+'_correct'] == "true"
+        if correct_answers[a+'_correct'] == "false"
           return_value = false;
         end 
       end
-      return_value = values.count == answer_number;
+      if return_value
+        return_value = (values.count == answer_number);
+      end
       return return_value;
     end
   

@@ -13,8 +13,9 @@
             </p>
           <% end %>
         <% end %>
-        <button class="button w-100 my-1" onclick="location.href='/reload?restart=1'" >Reload</button>
-        <button class="button w-100 my-1" onclick="location.href='/reload?restart=0'">Redo</button>
+        <%= link_to "Reload", {:controller => :quizzes, :action => :reload}, {class:"btn btn-primary m-2"}%>
+        <%= link_to "Redo", {:controller => :quizzes, :action => :redo}, {class:"btn btn-primary m-2"}%>
+
         <% else %>
         <p>
           Please start a quiz to see your resluts!

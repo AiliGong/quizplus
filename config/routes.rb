@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post 'submit_answer', to: 'quizzes#submit_answer'
   get 'show_result', to: 'quizzes#show_result'
   get 'reload', to: 'quizzes#reload'
+  get 'redo', to: 'quizzes#redo'
+
 end
