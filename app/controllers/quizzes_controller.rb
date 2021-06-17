@@ -66,18 +66,16 @@ class QuizzesController < ApplicationController
 
   private
   def request_api(url, limit)
-    response = Excon.get(url)
-   if response.status == 200
-      return JSON.parse(response.body)
-   else
+  #   response = Excon.get(url)
+  #  if response.status == 200
+  #     return JSON.parse(response.body)
+  #  else
     return read_from_local(limit)
-   end
+  #  end
   end
 
   def getQuestions(limit, category, difficulty)
     key = "lw4x9Tf7Qzt5qKUWWUlPb6WmD0O1SnYS9K4EmKEa"
-    # request_api(
-    # "https://quizapi.io/api/v1/questions?apiKey=#{key}&limit=#{limit}&difficulty=#{difficulty}&category=#{nil}", limit)
      
     if category      
       questions = []

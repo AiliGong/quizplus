@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### apiKey
 
-Things you may want to cover:
+lw4x9Tf7Qzt5qKUWWUlPb6WmD0O1SnYS9K4EmKEa
 
-* Ruby version
+### Heroku deployment URL
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://s3443647-quizapp.herokuapp.com
