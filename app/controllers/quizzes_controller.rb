@@ -6,8 +6,15 @@ class QuizzesController < ApplicationController
     limit = params[:number]
     category = params[:filter] ? params[:filter][:category] : nil
     difficulty = params[:filter] ? params[:filter][:diffculty] : nil
-    
+
+    # saved in session for reloading
+    session[:category] = category
+    session[:difficulty] = difficulty
+    session[:number] = limit
+
+    # get questions
     response = getQuestions(limit, category, difficulty)
+
     questions = response.map{|h| Question.find_by_id_or_create(h['id'], h)}
     session[:questions] = questions.map{|q| q.id }
     session[:question_index] = 0;
@@ -68,11 +75,21 @@ class QuizzesController < ApplicationController
   end
 
   def getQuestions(limit, category, difficulty)
-    category_q = category ? category[0] : nil
-    difficulty_q = URI.encode("#{difficulty}");
     key = "lw4x9Tf7Qzt5qKUWWUlPb6WmD0O1SnYS9K4EmKEa"
-    request_api(
-    "https://quizapi.io/api/v1/questions?apiKey=#{key}&limit=#{limit}&difficulty=#{difficulty_q}&category=#{category_q}", limit)
+    # request_api(
+    # "https://quizapi.io/api/v1/questions?apiKey=#{key}&limit=#{limit}&difficulty=#{difficulty}&category=#{nil}", limit)
+     
+    if category      
+      questions = []
+      category.each { |c|   
+        questions += request_api(
+        "https://quizapi.io/api/v1/questions?apiKey=#{key}&limit=#{limit}&difficulty=#{difficulty}&category=#{c.downcase}", limit)}
+      
+      return questions.shuffle!.first(limit.to_i)
+    else
+      return request_api(
+      "https://quizapi.io/api/v1/questions?apiKey=#{key}&limit=#{limit}&difficulty=#{difficulty}&category=#{nil}", limit)
+    end
   end
 
   def check_answers

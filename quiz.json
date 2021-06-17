@@ -1,0 +1,642 @@
+[
+    {
+        "id": 605,
+        "question": "How can you pass a variable by reference?",
+        "description": null,
+        "answers": {
+            "answer_a": "$var1 = &$var2",
+            "answer_b": "$var1 == &$var2",
+            "answer_c": "$var1 === &$var2",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "PHP"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1039,
+        "question": "With Ansible you can only use SSH key as it does not work with SSH password.",
+        "description": "You could either use SSH keys or you could use the -k argument and use SSH password instead.",
+        "answers": {
+            "answer_a": "true",
+            "answer_b": "false",
+            "answer_c": null,
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "DevOps"
+            }
+        ],
+        "category": "DevOps",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 973,
+        "question": "Inside which HTML element do we put the JavaScript?",
+        "description": null,
+        "answers": {
+            "answer_a": "<javascript>",
+            "answer_b": "<script>",
+            "answer_c": "<js>",
+            "answer_d": "<scripting>",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "JavaScript"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 574,
+        "question": "PHP scripts are enclosed within _______",
+        "description": null,
+        "answers": {
+            "answer_a": "<php> . . . </php>",
+            "answer_b": "<p> . . . </p>",
+            "answer_c": "?php . . . ?php",
+            "answer_d": "<?php . . . ?>",
+            "answer_e": "<? .... ?>",
+            "answer_f": "<?php"
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "true",
+            "answer_e_correct": "true",
+            "answer_f_correct": "true"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "PHP"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 372,
+        "question": "What will be the output of the SELECT CASE WHEN NULL = NULL THEN 'YES' ELSE 'NO' END",
+        "description": null,
+        "answers": {
+            "answer_a": "True",
+            "answer_b": "False",
+            "answer_c": "An Error will be generated",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "MySQL"
+            }
+        ],
+        "category": "SQL",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 101,
+        "question": "Can you run several versions of PHP at the same time?",
+        "description": null,
+        "answers": {
+            "answer_a": "True",
+            "answer_b": "False",
+            "answer_c": null,
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "PHP"
+            }
+        ],
+        "category": "",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 492,
+        "question": "Which of the following tags represents a section of the document intended for navigation in HTML5?",
+        "description": null,
+        "answers": {
+            "answer_a": "footer",
+            "answer_b": "dialog",
+            "answer_c": "section",
+            "answer_d": "nav",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "true",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "HTML"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 987,
+        "question": "What is the correct way to write a JavaScript array?",
+        "description": null,
+        "answers": {
+            "answer_a": "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
+            "answer_b": "var colors = \"red\", \"green\", \"blue\"",
+            "answer_c": "var colors = [\"red\", \"green\", \"blue\"]",
+            "answer_d": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "JavaScript"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 981,
+        "question": "How to write an IF statement in JavaScript?",
+        "description": null,
+        "answers": {
+            "answer_a": "if i = 5 then",
+            "answer_b": "if i = 5",
+            "answer_c": "if i == 5 then",
+            "answer_d": "if (i == 5)",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "true",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "JavaScript"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 320,
+        "question": "Which file is the single most important file in Wordpress?",
+        "description": null,
+        "answers": {
+            "answer_a": "header.php",
+            "answer_b": "wp-setting.php",
+            "answer_c": "wp-config.php",
+            "answer_d": "page.php",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "WordPress"
+            }
+        ],
+        "category": "CMS",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 719,
+        "question": "The kube-apiserver on Kubernetes master is designed to scale:",
+        "description": null,
+        "answers": {
+            "answer_a": "Vertically",
+            "answer_b": "Horizontally",
+            "answer_c": "kube-apiserver is not used for scaling",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": "The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster’s shared state through which all other components interact.",
+        "tip": null,
+        "tags": [
+            {
+                "name": "Kubernetes"
+            }
+        ],
+        "category": "Linux",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 985,
+        "question": "How can you add a comment in a JavaScript?",
+        "description": null,
+        "answers": {
+            "answer_a": "//This is a comment",
+            "answer_b": "'This is a comment",
+            "answer_c": "<!--This is a comment-->",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "JavaScript"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 408,
+        "question": "Which of these is not a valid name for a column",
+        "description": null,
+        "answers": {
+            "answer_a": "To",
+            "answer_b": "Near",
+            "answer_c": "Far",
+            "answer_d": "From",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "true",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "MySQL"
+            }
+        ],
+        "category": "SQL",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 890,
+        "question": "Did Docker pioneer container technology?",
+        "description": null,
+        "answers": {
+            "answer_a": "True",
+            "answer_b": "False",
+            "answer_c": null,
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "Docker"
+            }
+        ],
+        "category": "Docker",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 779,
+        "question": "What is the difference between Numeric and Associative",
+        "description": null,
+        "answers": {
+            "answer_a": "The Numeric arrays can store numbers, strings and any object but their index will be represented by numbers while the Associative arrays have their index stored as string.",
+            "answer_b": "There are no Associative arrays",
+            "answer_c": "The Numeric and Associative arrays differ only in the maximum allowed objects in them.",
+            "answer_d": "The Numeric arrays can store numbers, strings and any object but their index will be represented by numbers while the Associative arrays each element in the main array can also be an array.",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "PHP"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 1016,
+        "question": "Which of the following are Kubernetes Objects?",
+        "description": null,
+        "answers": {
+            "answer_a": "Kubernetes objects are Pod, Service and Volume.",
+            "answer_b": "Kubernetes objects are  Host, Auth and Cluster.",
+            "answer_c": null,
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "Kubernetes"
+            }
+        ],
+        "category": "DevOps",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 646,
+        "question": "How do we create command aliases in a shell?",
+        "description": null,
+        "answers": {
+            "answer_a": "alias Aliasname=\"Command whose alias is to be created\"",
+            "answer_b": "set alias Aliasname=\"Command whose alias is to be created\"",
+            "answer_c": "We can't create aliases directly in shell",
+            "answer_d": "configure Aliasname=\"Command whose alias is to be created\"",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "BASH"
+            }
+        ],
+        "category": "Linux",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 804,
+        "question": "Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container?",
+        "description": null,
+        "answers": {
+            "answer_a": "$ docker exec it <container id> bash",
+            "answer_b": "$ docker exec --it <container id>",
+            "answer_c": "$ docker exec -it <container id> bash",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "Docker"
+            }
+        ],
+        "category": "Docker",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 996,
+        "question": "What will the following code return: Boolean(10 > 9)",
+        "description": null,
+        "answers": {
+            "answer_a": "true",
+            "answer_b": "NaN",
+            "answer_c": "false",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a",
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "JavaScript"
+            }
+        ],
+        "category": "Code",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 947,
+        "question": "Write a command to create deployment?",
+        "description": null,
+        "answers": {
+            "answer_a": "kubectl --create f Deployment.yaml –record",
+            "answer_b": "kubectl create f Deployment.yaml –record",
+            "answer_c": "kubectl create –f Deployment.yaml –record",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": null,
+        "explanation": null,
+        "tip": null,
+        "tags": [
+            {
+                "name": "Kubernetes"
+            }
+        ],
+        "category": "DevOps",
+        "difficulty": "Easy"
+    }
+]

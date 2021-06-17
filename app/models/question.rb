@@ -18,7 +18,7 @@ class Question < ApplicationRecord
     end
   
     def self.find_by_id_or_create(id, data)
-      obj = self.find_by_id( id )
+      obj = self.find_by_id(id)
       obj || self.create(data)
     end
   
