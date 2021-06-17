@@ -1,0 +1,44 @@
+<div class="container-sm  d-flex justify-content-center" style="background-color:whitesmoke;">
+    <div>
+        <div class="title h1 m-4">
+            Welcome to Quiz+ !
+        </div>
+            
+        <%= form_with url: start_quiz_path, method: :post, class: 'm-4' do |form| %>
+            <div class="mb-3">
+                <%= form.label :number, "Quiz Question Number: (4-8)" %>
+                <%= form.number_field :number, in: 4..8, step: 1, style: 'width: 150px', class:'form-control', :required => true %>
+            </div>
+    
+            <div class="mb-3">
+                <div class="d-3">Categories</div>
+                <%= check_box("filter", "category", {:multiple => true, class: 'btn-check'}, "Linux", nil) %>
+                <%= form.label "filter_category_linux", "Linux", class: 'btn btn-outline-secondary' %>
+    
+                <%= check_box("filter", "category", {:multiple => true, class: 'btn-check'}, "DevOps", nil) %>
+                <%= form.label "filter_category_devops", "DevOps", class: 'btn btn-outline-secondary' %>
+    
+                <%= check_box("filter", "category", {:multiple => true, class: 'btn-check'}, "Networking", nil) %>
+                <%= form.label "filter_category_networking", "Networking", class: 'btn btn-outline-secondary' %>
+                
+                <%= check_box("filter", "category", {:multiple => true, class: 'btn-check'}, "Programming", nil) %>
+                <%= form.label "filter_category_programming", "Programming", class: 'btn btn-outline-secondary' %>
+            </div>
+    
+            <div class="mb-3">
+                <div class="d-3">Difficulty Level</div>
+                <% @diffculty_levels.each do |diffculty| %>
+                    <%= form.radio_button "filter[diffculty]", diffculty, class: 'btn-check' %>
+                    <%= form.label "filter[diffculty]_#{diffculty}", diffculty, class: 'btn btn-outline-secondary' do %>
+                        <%= diffculty.upcase %>
+                    <% end %>
+                <% end %>
+            </div>
+    <br/>
+            <%= form.submit "Start", class: "btn btn-primary col-6" %>
+        <% end %>
+    
+    </div>
+    </div>
+    
+    

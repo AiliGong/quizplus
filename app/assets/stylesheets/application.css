@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+ footer {
+    background-color: aliceblue;
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .title {
+    font-family: 'Caveat', cursive;
+    font-size: 150%;
+  }
+  
+  .footer-icon {
+    font-size: 20px
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px;
+  }

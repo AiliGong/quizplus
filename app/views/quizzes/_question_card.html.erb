@@ -1,0 +1,28 @@
+<div class="container-md d-flex justify-content-center">
+    <div class="p-3 card shadow-lg rounded" style="width: 500px; margin-top:20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="card-title"><%= question.question %></h5>
+                </div>    
+                    <%= form_with url: submit_answer_path, method: :post, class: '' do |form| %>
+                <div class="col-12 mb-4 mt-2" id="questions">
+                    <%= hidden_field(:question, :id) %>
+                    <% question.answers.each do |key, value| %>
+                        <% if value  %>
+                        <div class="py-1 w-100 col-12">
+                            <%= check_box_tag 'chosed_answers[]' , key , false, class: "pr-5" %> 
+                            <%= value %>
+                        </div>
+                        <% end %>
+                        <% end %>
+                </div>
+                <div class="col-12">
+
+                    <%= form.submit "Submit", class: "btn btn-primary col-12" %>
+                </div>
+                    <% end %>
+            </div>
+        </div>
+    </div>
+</div>

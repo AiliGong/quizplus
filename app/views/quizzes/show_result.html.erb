@@ -1,0 +1,27 @@
+<div class="container-md d-flex justify-content-center">
+  <div class="p-3 card shadow-lg rounded" style="width: 500px; margin-top:20px">
+    <div class="container">
+      <div class="row">
+        <% if session[:results] %>
+        <div class="col-12">
+          <p class="h4" style="text-align: center"><%= "This time, you answered " + session[:results][-1][1].to_s + "/" + session[:results][-1][2].to_s + " questions correctly" %></p>
+        </div>
+        <% session[:results].each_with_index do |value, index| %>
+          <% if index + 1 < session[:results].count %> 
+            <p class="h5">
+              <%= "At " + value[0]  + ", you answered " + value[1].to_s + "/" + value[2].to_s + " questions correctly" %>
+            </p>
+          <% end %>
+        <% end %>
+        <button class="button w-100 my-1" onclick="location.href='/reload?restart=1'" >Reload</button>
+        <button class="button w-100 my-1" onclick="location.href='/reload?restart=0'">Redo</button>
+        <% else %>
+        <p>
+          Please start a quiz to see your resluts!
+        </p>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

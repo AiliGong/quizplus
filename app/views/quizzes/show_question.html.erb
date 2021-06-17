@@ -1,0 +1,6 @@
+
+<% if flash[:notice] %>
+    <div class="alert alert-warning"><%= flash[:notice] %></div>
+<% end %>
+
+<%= render 'quizzes/question_card', question: @question %>
