@@ -66,12 +66,12 @@ class QuizzesController < ApplicationController
 
   private
   def request_api(url, limit)
-  #   response = Excon.get(url)
-  #  if response.status == 200
-  #     return JSON.parse(response.body)
-  #  else
+    response = Excon.get(url)
+   if response.status == 200
+      return JSON.parse(response.body)
+   else
     return read_from_local(limit)
-  #  end
+   end
   end
 
   def getQuestions(limit, category, difficulty)
