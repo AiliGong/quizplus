@@ -13,7 +13,7 @@
             </p>
           <% end %>
         <% end %>
-        <%= link_to "Reload", {:controller => :quizzes, :action => :reload}, {class:"btn btn-primary m-2"}%>
+        <%= link_to "Reload", {:controller => :home, :action => :index}, {class:"btn btn-primary m-2"}%>
         <%= link_to "Redo", {:controller => :quizzes, :action => :redo}, {class:"btn btn-primary m-2"}%>
 
         <% else %>
