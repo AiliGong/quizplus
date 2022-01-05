@@ -1,20 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+<nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5" style="background-color: #98b7e5;">
   <div class="container-fluid">
     <%= link_to "Quiz+", {:controller => :home, :action => :index}, {class:
     "navbar-brand title"}%>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="nav-item">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li>
+        <!-- <li class="nav-item active"> -->
           <%= link_to "Home", {:controller => :home, :action => :index}, {class:
-            "nav-link active"}%>
-        </li>
+            "nav-link"}%>
+        <!-- </li> -->
+  
       </ul>
-     
-      <div>
-        <p>Aili Gong</p>
-        <p>s3443647@student.rmit.edu.au</p>
+        <div class="me-2">
+          <i class="far fa-envelope"></i>
+        </div>
+        <div class="me-1">aili.elly.gong@gmail.com</div>
       </div>
-    </div>
   </div>
 </nav>
