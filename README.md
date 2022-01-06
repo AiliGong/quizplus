@@ -2,8 +2,7 @@
 
 A time limited uni project using Ruby on Rails.
 
-![Screen Shot 2022-01-06 at 8.08.24 pm](/Users/ellygong/Develop/ruby/quizplus/public/Screen Shot.png)
-
+<img src="public/ScreenShot.png" width="500">
 
 ### Heroku deployment URL
 
